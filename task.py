@@ -11,7 +11,7 @@ class Task:
     Attributes:
         task_id (str): The ID of the task.
         description (str): The description of the task.
-        deadline (str): The deadline of the task.
+        deadline (datetime): The deadline of the task.
         status (str): The status of the task.
         project (Project): The project associated with the task.
     """
@@ -23,8 +23,12 @@ class Task:
         Args:
             task_id (str): The ID of the task.
             description (str): The description of the task.
-            deadline (str): The deadline of the task.
+            deadline (datetime): The deadline of the task.
             status (str): The status of the task.
             project (Project): The project associated with the task.
         """
-        pass
+        self.task_id = task_id
+        self.description = description
+        self.deadline = deadline
+        self.status = status
+        self.project = project
